@@ -39,6 +39,14 @@ data_dir = config.get('path','data_dir')
 checkpoint_dir = config.get('path','checkpoint_dir')
 logger_file = config.get('path','logger_file')
 
+class settings():
+    def __init__(self):
+        batchsize = 0
+        epochs = 0
+        lr = 0
+        loss_alpha = 0
+        loss_beta = 0
+
 def F1_score(matrix):
     precision = matrix[0][0]/(matrix[0][0]+matrix[0][1])
     recall = matrix[0][0]/(matrix[0][0]+matrix[1][0])
@@ -80,7 +88,8 @@ def calc_err(output, target, length):
     
     return err
     
-def train_net(net,
+def train_net(args,
+              net,
               device,
               n_fold,
               epochs=100,
@@ -112,7 +121,7 @@ def train_net(net,
         criterion1 = nn.CrossEntropyLoss()
     else:
         criterion1 = nn.BCEWithLogitsLoss()
-    criterion2 = MultipleLoss()
+    criterion2 = MultipleLoss(args.loss_alpha)
 
     best_kappa = 0
     
@@ -154,7 +163,7 @@ def train_net(net,
 
                 loss1 = criterion1(masks_pred, true_masks)
                 loss2 = criterion2(outputs, target)
-                loss = 0.5*loss1+loss2
+                loss  = args.loss_beta*loss1+loss2
                 epoch_loss += loss.item()
                 writer.add_scalar('Loss/train', loss.item(), global_step)
 
@@ -228,11 +237,20 @@ def get_args():
 
     return parser.parse_args() 
 
+def from_config(config):
+    args = settings()
+    args.batchsize  = int(config.get('setting','batchsize'))
+    args.epochs     = int(config.get('setting','epoch')) 
+    args.lr         = float(config.get('setting','lr'))
+    args.loss_alpha = float(config.get('hyperparam','loss_alpha'))
+    args.loss_beta  = float(config.get('hyperparam','loss_beta'))
+    return args
 
 if __name__ == '__main__':
 
     log = Logger(logger_file)
-    args = get_args()
+    #args = get_args()
+    args = from_config(config)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     seed = 1
     torch.manual_seed(seed)
@@ -267,16 +285,11 @@ if __name__ == '__main__':
             
         net.load_state_dict(net_dict)  
 
-        if args.load:
-            net.load_state_dict(
-                torch.load(args.load, map_location=device)
-            )
-            log.logger.info(f'Model loaded from {args.load}')
-
         net.to(device=device)    
     
         try:
-            train_net(net=net,
+            train_net(args,
+                      net=net,
                       n_fold=i_fold,
                       epochs=args.epochs,
                       batch_size=args.batchsize,

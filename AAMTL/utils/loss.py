@@ -4,13 +4,15 @@ import torch.nn.functional as F
 from torch.autograd import Function
         
 class MultipleLoss(nn.Module):
-    def __init__(self):
+    def __init__(self, alpha=1):
         super(MultipleLoss, self).__init__()
         self.Loss_main = nn.CrossEntropyLoss()
         self.Loss_att = nn.ModuleList([
                             nn.CrossEntropyLoss()
                             for typeIndex in range(4)
                             ])
+                            
+        self.alpha = alpha
 
         
     def forward(self, outputs, targets):
@@ -25,7 +27,7 @@ class MultipleLoss(nn.Module):
         loss = loss_main
 
         for i in range(len(outputs)-1):
-            loss+=(1.0/len(outputs))*loss_att[i]
+            loss+= self.alpha/len(outputs)*loss_att[i]
             
         return loss
         
