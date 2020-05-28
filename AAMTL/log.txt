@@ -1,5 +1,5 @@
-2020-05-28 14:41:22,246 - train.py[line:242] - INFO: Using device cuda
-2020-05-28 14:41:31,305 - train.py[line:109] - INFO: Starting training:
+2020-05-28 14:53:18,331 - train.py[line:242] - INFO: Using device cuda
+2020-05-28 14:53:27,703 - train.py[line:109] - INFO: Starting training:
         Fold:            0
         Epochs:          150
         Batch size:      8
@@ -9,4 +9,232 @@
         Checkpoints:     True
         Device:          cuda
     
-2020-05-28 14:41:35,612 - train.py[line:287] - INFO: Saved interrupt
+2020-05-28 14:54:16,730 - train.py[line:188] - INFO: Train Epoch: 0.00 	 Loss: 1.041693	Error: 30.959302
+2020-05-28 14:54:16,731 - train.py[line:190] - INFO: Calc Error: 33.236434
+2020-05-28 14:54:16,731 - train.py[line:190] - INFO: Comp Error: 27.906977
+2020-05-28 14:54:16,731 - train.py[line:190] - INFO: Marg Error: 26.211240
+2020-05-28 14:54:16,731 - train.py[line:190] - INFO: Echo Error: 33.575581
+2020-05-28 14:54:26,296 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Tot===
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 60/229 (26.20%)
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (24.72%)
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [101, 68]
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [106, 123]
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[101, 5], [55, 68]]
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 169/229
+2020-05-28 14:54:26,297 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9528	Recall:0.6474	F1_Score:0.7710
+2020-05-28 14:54:26,302 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.4897
+
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Calc===
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 67/229 (29.26%)
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (40.31%)
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [143, 19]
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[143, 7], [60, 19]]
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 162/229
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9533	Recall:0.7044	F1_Score:0.8102
+2020-05-28 14:54:26,303 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.2304
+
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Comp===
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 46/229 (20.09%)
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (27.62%)
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [145, 38]
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[145, 5], [41, 38]]
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 183/229
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9667	Recall:0.7796	F1_Score:0.8631
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.5018
+
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Marg===
+2020-05-28 14:54:26,304 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 53/229 (23.14%)
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (36.06%)
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [22, 154]
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [59, 170]
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[22, 37], [16, 154]]
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 176/229
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.3729	Recall:0.5789	F1_Score:0.4536
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.3154
+
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Echo===
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 57/229 (24.89%)
+2020-05-28 14:54:26,305 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (30.10%)
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [131, 41]
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [139, 90]
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[131, 8], [49, 41]]
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 172/229
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9424	Recall:0.7278	F1_Score:0.8213
+2020-05-28 14:54:26,306 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.4327
+
+2020-05-28 14:54:26,308 - train.py[line:195] - INFO: best kappa updated.
+2020-05-28 14:54:26,591 - train.py[line:205] - INFO: Checkpoint 1 saved !
+2020-05-28 14:54:26,591 - train.py[line:207] - INFO: Validation Dice Coeff: 0.8143620845607297
+2020-05-28 14:55:15,337 - train.py[line:188] - INFO: Train Epoch: 1.00 	 Loss: 0.903605	Error: 23.546512
+2020-05-28 14:55:15,338 - train.py[line:190] - INFO: Calc Error: 28.391473
+2020-05-28 14:55:15,338 - train.py[line:190] - INFO: Comp Error: 23.158915
+2020-05-28 14:55:15,338 - train.py[line:190] - INFO: Marg Error: 23.013566
+2020-05-28 14:55:15,338 - train.py[line:190] - INFO: Echo Error: 28.875969
+2020-05-28 14:55:25,023 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Tot===
+2020-05-28 14:55:25,024 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 51/229 (22.27%)
+2020-05-28 14:55:25,024 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (21.91%)
+2020-05-28 14:55:25,024 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [88, 90]
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [106, 123]
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[88, 18], [33, 90]]
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 178/229
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.8302	Recall:0.7273	F1_Score:0.7753
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.5565
+
+2020-05-28 14:55:25,025 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Calc===
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 64/229 (27.95%)
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (35.41%)
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [133, 32]
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[133, 17], [47, 32]]
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 165/229
+2020-05-28 14:55:25,026 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.8867	Recall:0.7389	F1_Score:0.8061
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.3205
+
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Comp===
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 32/229 (13.97%)
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (19.05%)
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [146, 51]
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[146, 4], [28, 51]]
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 197/229
+2020-05-28 14:55:25,027 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9733	Recall:0.8391	F1_Score:0.9012
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.6668
+
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Marg===
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 57/229 (24.89%)
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (39.45%)
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [18, 154]
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [59, 170]
+2020-05-28 14:55:25,028 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[18, 41], [16, 154]]
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 172/229
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.3051	Recall:0.5294	F1_Score:0.3871
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.2448
+
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Echo===
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 50/229 (21.83%)
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (24.25%)
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [121, 58]
+2020-05-28 14:55:25,029 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [139, 90]
+2020-05-28 14:55:25,030 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[121, 18], [32, 58]]
+2020-05-28 14:55:25,030 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 179/229
+2020-05-28 14:55:25,030 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.8705	Recall:0.7908	F1_Score:0.8288
+2020-05-28 14:55:25,030 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.5295
+
+2020-05-28 14:55:25,032 - train.py[line:195] - INFO: best kappa updated.
+2020-05-28 14:55:26,170 - train.py[line:205] - INFO: Checkpoint 2 saved !
+2020-05-28 14:55:26,170 - train.py[line:207] - INFO: Validation Dice Coeff: 0.844045206188635
+2020-05-28 14:56:15,230 - train.py[line:188] - INFO: Train Epoch: 2.00 	 Loss: 0.802840	Error: 18.895349
+2020-05-28 14:56:15,231 - train.py[line:190] - INFO: Calc Error: 24.273256
+2020-05-28 14:56:15,231 - train.py[line:190] - INFO: Comp Error: 19.815891
+2020-05-28 14:56:15,231 - train.py[line:190] - INFO: Marg Error: 21.899225
+2020-05-28 14:56:15,231 - train.py[line:190] - INFO: Echo Error: 25.920543
+2020-05-28 14:56:24,928 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Tot===
+2020-05-28 14:56:24,929 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 54/229 (23.58%)
+2020-05-28 14:56:24,929 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (23.45%)
+2020-05-28 14:56:24,929 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [83, 92]
+2020-05-28 14:56:24,930 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [106, 123]
+2020-05-28 14:56:24,930 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[83, 23], [31, 92]]
+2020-05-28 14:56:24,930 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 175/229
+2020-05-28 14:56:24,930 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.7830	Recall:0.7281	F1_Score:0.7545
+2020-05-28 14:56:24,930 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.5282
+
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Calc===
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 58/229 (25.33%)
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (33.11%)
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [138, 33]
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[138, 12], [46, 33]]
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 171/229
+2020-05-28 14:56:24,931 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9200	Recall:0.7500	F1_Score:0.8263
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.3760
+
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Comp===
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 33/229 (14.41%)
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (18.49%)
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [142, 54]
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[142, 8], [25, 54]]
+2020-05-28 14:56:24,932 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 196/229
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9467	Recall:0.8503	F1_Score:0.8959
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.6640
+
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Marg===
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 50/229 (21.83%)
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (30.75%)
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [30, 149]
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [59, 170]
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[30, 29], [21, 149]]
+2020-05-28 14:56:24,933 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 179/229
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.5085	Recall:0.5882	F1_Score:0.5455
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.4028
+
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Echo===
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 41/229 (17.90%)
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (20.43%)
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [127, 61]
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [139, 90]
+2020-05-28 14:56:24,934 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[127, 12], [29, 61]]
+2020-05-28 14:56:24,935 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 188/229
+2020-05-28 14:56:24,935 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9137	Recall:0.8141	F1_Score:0.8610
+2020-05-28 14:56:24,935 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.6118
+
+2020-05-28 14:56:24,936 - train.py[line:207] - INFO: Validation Dice Coeff: 0.8635940669698225
+2020-05-28 14:57:14,272 - train.py[line:188] - INFO: Train Epoch: 3.00 	 Loss: 0.684476	Error: 13.420543
+2020-05-28 14:57:14,273 - train.py[line:190] - INFO: Calc Error: 21.269380
+2020-05-28 14:57:14,273 - train.py[line:190] - INFO: Comp Error: 18.604651
+2020-05-28 14:57:14,273 - train.py[line:190] - INFO: Marg Error: 20.978682
+2020-05-28 14:57:14,273 - train.py[line:190] - INFO: Echo Error: 24.079457
+2020-05-28 14:57:23,922 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Tot===
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 81/229 (35.37%)
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (37.95%)
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [29, 119]
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [106, 123]
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[29, 77], [4, 119]]
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 148/229
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.2736	Recall:0.8788	F1_Score:0.4173
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.2531
+
+2020-05-28 14:57:23,923 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Calc===
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 58/229 (25.33%)
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (35.21%)
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [145, 26]
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[145, 5], [53, 26]]
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 171/229
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.9667	Recall:0.7323	F1_Score:0.8333
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.3455
+
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Comp===
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 40/229 (17.47%)
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (17.83%)
+2020-05-28 14:57:23,924 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [125, 64]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[125, 25], [15, 64]]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 189/229
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.8333	Recall:0.8929	F1_Score:0.8621
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.6247
+
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Marg===
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 58/229 (25.33%)
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (28.68%)
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [38, 133]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [59, 170]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[38, 21], [37, 133]]
+2020-05-28 14:57:23,925 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 171/229
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.6441	Recall:0.5067	F1_Score:0.5672
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.3917
+
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:59] - INFO: ===Echo===
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:60] - INFO: Error: 46/229 (20.09%)
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:61] - INFO: Weighted Error: (19.68%)
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:62] - INFO: [109, 74]
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:63] - INFO: [139, 90]
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:64] - INFO: [[109, 30], [16, 74]]
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:65] - INFO: 183/229
+2020-05-28 14:57:23,926 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:66] - INFO: Precision:0.7842	Recall:0.8720	F1_Score:0.8258
+2020-05-28 14:57:23,927 - /home/dq-ai/Code/miccai2020_400/AAMTL/utils/eval.py[line:67] - INFO: kappa:0.5902
+
+2020-05-28 14:57:23,928 - train.py[line:207] - INFO: Validation Dice Coeff: 0.8498568402286591
+2020-05-28 14:57:42,254 - train.py[line:287] - INFO: Saved interrupt
