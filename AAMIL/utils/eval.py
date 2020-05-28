@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 from tqdm import tqdm
 import logging
-from dice_loss import dice_coeff
+from loss import dice_coeff
 import numpy as np
 def calc_single_result(output, target, count_tot):
     curr_max = torch.max(output.cpu().data).item()
