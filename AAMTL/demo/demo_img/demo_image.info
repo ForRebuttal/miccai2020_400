@@ -1,0 +1,24 @@
+#Ground-truth for the demo images
+=====
+demo1.jpg:
+    Diagnisis:              Malignant
+    Echogenic Foci:         none
+    Composition:            solid
+    Margin:                 well-defind
+    Echogenicity:           hypoechogenic
+    
+=====
+demo2.jpg:
+    Diagnisis:              Malignant
+    Echogenic Foci:         exists
+    Composition:            solid
+    Margin:                 ill-defind
+    Echogenicity:           hyper/isoechogenic
+    
+=====
+demo3.jpg:
+    Diagnisis:              Benign
+    Echogenic Foci:         exists
+    Composition:            solid
+    Margin:                 well-defind
+    Echogenicity:           hyper/isoechogenic

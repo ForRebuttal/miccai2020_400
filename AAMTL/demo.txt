@@ -1,0 +1,4 @@
+2020-05-28 21:43:22,862 - demo.py[line:107] - INFO: Using device cuda
+2020-05-28 21:43:22,862 - demo.py[line:109] - INFO: Start initialize model...
+2020-05-28 21:43:26,695 - demo.py[line:138] - INFO: Model loaded from ../pretrained_model/model.pth
+2020-05-28 21:43:28,217 - demo.py[line:143] - INFO: Model initialized
