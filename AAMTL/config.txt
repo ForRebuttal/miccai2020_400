@@ -1,5 +1,5 @@
 [path]
-data_dir = /home/dq-ai/Code/preprocess/DataV7.3
+data_dir = /home/kongming/dagengren/data/Thyroid
 checkpoint_dir = checkpoints_src/
 logger_file = log.txt
 

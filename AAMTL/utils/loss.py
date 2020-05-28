@@ -18,11 +18,11 @@ class MultipleLoss(nn.Module):
     def forward(self, outputs, targets):
         loss_att = []
         target = targets[:,0:1].view(-1)
-        loss_main = self.Loss_main(outputs[0],target)
+        loss_main = self.Loss_main(F.softmax(outputs[0]),target)
         
         for i in range(1, len(outputs)):
             target = targets[:,i:i+1].view(-1)
-            loss_att.append(self.Loss_att[i-1](outputs[i],target))
+            loss_att.append(self.Loss_att[i-1](F.softmax(outputs[i]),target)) 
 
         loss = loss_main
 
