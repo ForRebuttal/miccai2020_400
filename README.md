@@ -5,14 +5,14 @@ Code, model and demo for MICCAI2020_400 submission
 
 ## Finished
 
-    *The code for training
+    The code for training
     
-    *The most important hyper-parameters
+    The most important hyper-parameters
     
-    *Demo for diagnosis and segmentation
+    Demo for diagnosis and segmentation
 
 ## To do
   
-    * Attributer feature visualization
+    Attributer feature visualization
     
-    * More details
+    More details
