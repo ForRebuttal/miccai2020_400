@@ -1,0 +1,60 @@
+2020-05-28 10:54:22,228 - test.py[line:132] - INFO: Using device cuda
+2020-05-28 10:54:32,794 - test.py[line:169] - INFO: Model loaded from checkpoints_src/CV_0.pth
+2020-05-28 10:54:40,260 - test.py[line:94] - INFO: Starting training:
+        Learning rate:   0.01
+        Training size:   2056
+        Validation size: 229
+        Checkpoints:     True
+        Device:          cuda
+    
+2020-05-28 10:55:15,991 - /home/kongming/Code/demo/utils/eval.py[line:59] - INFO: ===Tot===
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:60] - INFO: Error: 59/229 (25.76%)
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:61] - INFO: Weighted Error: (25.29%)
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:62] - INFO: [86, 84]
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:63] - INFO: [106, 123]
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:64] - INFO: [[86, 20], [39, 84]]
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:65] - INFO: 170/229
+2020-05-28 10:55:15,992 - /home/kongming/Code/demo/utils/eval.py[line:66] - INFO: Precision:0.8113	Recall:0.6880	F1_Score:0.7446
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:67] - INFO: kappa:0.4882
+
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:59] - INFO: ===Calc===
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:60] - INFO: Error: 74/229 (32.31%)
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:61] - INFO: Weighted Error: (43.54%)
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:62] - INFO: [139, 16]
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:64] - INFO: [[139, 11], [63, 16]]
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:65] - INFO: 155/229
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:66] - INFO: Precision:0.9267	Recall:0.6881	F1_Score:0.7898
+2020-05-28 10:55:15,993 - /home/kongming/Code/demo/utils/eval.py[line:67] - INFO: kappa:0.1530
+
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:59] - INFO: ===Comp===
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:60] - INFO: Error: 50/229 (21.83%)
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:61] - INFO: Weighted Error: (23.86%)
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:62] - INFO: [124, 55]
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:63] - INFO: [150, 79]
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:64] - INFO: [[124, 26], [24, 55]]
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:65] - INFO: 179/229
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:66] - INFO: Precision:0.8267	Recall:0.8378	F1_Score:0.8322
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:67] - INFO: kappa:0.5198
+
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:59] - INFO: ===Marg===
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:60] - INFO: Error: 56/229 (24.45%)
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:61] - INFO: Weighted Error: (31.96%)
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:62] - INFO: [31, 142]
+2020-05-28 10:55:15,994 - /home/kongming/Code/demo/utils/eval.py[line:63] - INFO: [59, 170]
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:64] - INFO: [[31, 28], [28, 142]]
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:65] - INFO: 173/229
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:66] - INFO: Precision:0.5254	Recall:0.5254	F1_Score:0.5254
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:67] - INFO: kappa:0.3607
+
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:59] - INFO: ===Echo===
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:60] - INFO: Error: 54/229 (23.58%)
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:61] - INFO: Weighted Error: (27.26%)
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:62] - INFO: [125, 50]
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:63] - INFO: [139, 90]
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:64] - INFO: [[125, 14], [40, 50]]
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:65] - INFO: 175/229
+2020-05-28 10:55:15,995 - /home/kongming/Code/demo/utils/eval.py[line:66] - INFO: Precision:0.8993	Recall:0.7576	F1_Score:0.8224
+2020-05-28 10:55:15,996 - /home/kongming/Code/demo/utils/eval.py[line:67] - INFO: kappa:0.4792
+
+2020-05-28 10:55:15,999 - test.py[line:98] - INFO: Validation Dice Coeff: 0.8220239411185467

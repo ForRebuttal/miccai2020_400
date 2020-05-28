@@ -1,0 +1,12 @@
+2020-05-28 13:23:49,955 - train.py[line:242] - INFO: Using device cuda
+2020-05-28 13:23:59,932 - train.py[line:109] - INFO: Starting training:
+        Fold:            0
+        Epochs:          150
+        Batch size:      8
+        Learning rate:   0.01
+        Training size:   2056
+        Validation size: 229
+        Checkpoints:     True
+        Device:          cuda
+    
+2020-05-28 13:24:10,258 - train.py[line:287] - INFO: Saved interrupt
