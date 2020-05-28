@@ -27,19 +27,11 @@ class BasicDataset(Dataset):
 
         for i in dataset:
             id = i[2]
-
-
-            nodule_size=float(i[3][1][1])
-            
-            
+            nodule_size=float(i[3][1][1])           
             orig_img   = i[0][:,:,0]/255
-            orig_img_1 = (i[0][:,:,0]-i[5][2])/i[5][3]
-            orig_img_2 = (orig_img-self.mean)/self.std
             orig_img   = np.expand_dims(orig_img, axis=0)
-            orig_img_1 = np.expand_dims(orig_img_1, axis=0)
-            orig_img_2 = np.expand_dims(orig_img_2, axis=0)
+
             data = np.concatenate((orig_img, orig_img, orig_img), axis=0)
-            # data = np.concatenate((orig_img_1, orig_img_1, orig_img_1), axis=0)
             mask_img = i[0][:,:,3]/255
             self.id.append(id)
             self.data.append(data)
