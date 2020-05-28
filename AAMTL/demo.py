@@ -67,7 +67,7 @@ def get_args():
 
 if __name__ == '__main__':
 
-    log = Logger("demo.txt")
+    log = Logger("log_demo.txt")
 
     args = get_args()
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
