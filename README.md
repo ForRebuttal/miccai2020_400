@@ -9,10 +9,8 @@ Code, model and demo for MICCAI2020_400 submission
     
     The most important hyper-parameters
     
-    Demo for diagnosis and segmentation
+    Demo for diagnosis and segmentation/Attributer feature visualization
 
 ## To do
-  
-    Attributer feature visualization
     
     More details
