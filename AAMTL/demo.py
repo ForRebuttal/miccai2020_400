@@ -35,50 +35,22 @@ data_dir = "/home/kongming/dagengren/data/Thyroid"
 dir_checkpoint = 'checkpoints_src/'
 model_dir = "../pretrained_model/model.pth"
 
-def F1_score(matrix):
-    precision = matrix[0][0]/(matrix[0][0]+matrix[0][1])
-    recall = matrix[0][0]/(matrix[0][0]+matrix[1][0])
-    F1 = 2*precision*recall/max((precision+recall),0.0001)
-    return precision, recall, F1
-
-def kappa_value(matrix):
-    matrix = np.array(matrix)
-    length = matrix.shape[0]
-    po = np.sum(matrix.diagonal())/np.sum(matrix)
-    pe=0
-    for i in range(length):
-        pe+=np.sum(matrix[i])*np.sum(matrix[:,i])
-    pe/=(np.sum(matrix)**2)
-    return (po-pe)/(1-pe)
 
 
-def Weighted_Error(matrix):
-    acc = 0
-    n = len(matrix)
-    for i in range(n):
-        acc += matrix[i][i] / sum(matrix[i]) / n
-    return 1 - acc
-
-
-def calc_single_result(output, target, count_tot):
-    curr_max = torch.max(output.cpu().data).item()
-    index = target.cpu().data[0].item()  # actually right
-    count_tot[index] += 1
-    # outnp=output[:,0:2].cpu().data.numpy()[0]
-    # for j in range(2):
-    #     if outnp[j] == curr_max:
-    #         pred = j
-
-    _, pred = torch.max(output, 1)
-
-    return index, pred.item(), count_tot, curr_max
-
-def test_single(net, device, img_pth):
-    
+def test_single(net, device, fname):
+    img_pth = "./demo/demo_img/{}".format(fname)
+    vis_pth = "./demo/visualization/{}".format(fname.split(".")[0])
+    try:
+        os.mkdir(vis_pth)
+    except OSError:
+        pass
     img = Image.open(img_pth)
+    orig_size = img.size
     np_img = np.array(img.resize((224,224)))/255   
     #print(np_img.shape)
-    eval_demo(net, np_img, device, log.logger)
+    mask_np = eval_demo(net, np_img, device, log.logger)
+    mask_img = Image.fromarray(mask_np.astype('uint8')).convert('RGB').resize(orig_size)
+    mask_img.save(os.path.join(vis_pth, fname.split(".")[0]+"_seg.jpg"))
         
     #log.logger.info('Validation Dice Coeff: {}'.format(val_score))
 
@@ -142,10 +114,10 @@ if __name__ == '__main__':
     
     log.logger.info(f'Model initialized')
     net.to(device=device)    
-    img_pth = "./demo/demo_img/{}".format(args.fname)
+    
     print("Filename: {}".format(args.fname))
     try:
-        test_single(net, device, img_pth)
+        test_single(net, device, args.fname)
     except KeyboardInterrupt:
         try:
             sys.exit(0)
