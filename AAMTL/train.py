@@ -159,7 +159,7 @@ def train_net(args,
                 target = target.to(device=device, dtype=torch.long)
                 aspect = aspect.to(device=device, dtype=torch.float32)
 
-                masks_pred, outputs = net(imgs)
+                masks_pred, outputs, _ = net(imgs)
 
                 loss1 = criterion1(masks_pred, true_masks)
                 loss2 = criterion2(outputs, target)

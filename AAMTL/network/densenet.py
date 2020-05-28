@@ -394,7 +394,14 @@ class DenseNet(nn.Module):
                 nn.init.constant_(m.bias, 0)
             elif isinstance(m, nn.Linear):
                 nn.init.constant_(m.bias, 0)
-        
+    def save_gradient(self, grad):
+        # if hasattr(self, "gradients"):
+        #     self.gradients.append(grad)
+        # else:
+        #     self.gradients = []
+        #     self.gradients.append(grad)
+
+        self.gradients = grad
          
     def forward(self, x):
         x0 = self.block_0(x)    #64              *56
@@ -402,6 +409,7 @@ class DenseNet(nn.Module):
         x2 = self.block_2(x1)   #256             *14
         x3 = self.block_3(x2)   #896             *7
         x4 = self.block_4(x3)   #1920            *3
+        x4.register_hook(self.save_gradient)
         out_vector = F.adaptive_avg_pool2d(x4, (1, 1)).view(x4.size(0), -1)
         out, out_list = self.classifier(out_vector, x4)
 
@@ -418,7 +426,7 @@ class DenseNet(nn.Module):
 
         #x, out_list, fea_set = self.classifier(out_vector, out)
 
-        return logits, (out, out_list[0], out_list[1], out_list[2], out_list[3])
+        return logits, (out, out_list[0], out_list[1], out_list[2], out_list[3]), x4
 
     def extract_feature(self, out,net):
         for name, midlayer in net._modules.items():

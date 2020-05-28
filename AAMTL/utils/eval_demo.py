@@ -32,7 +32,7 @@ def eval_demo(net, orig_img, device, logger):
     img = img.to(device=device, dtype=torch.float32)
     #print(img.size())
     Att_Name = ["Calc", "Comp", "Marg", "Echo"]
-    mask_pred, outputs = net(img)
+    mask_pred, outputs, _ = net(img)
     output_result(outputs)
     mask_img_np = (mask_pred.cpu().data.squeeze().numpy()>0.5)*255
     return mask_img_np

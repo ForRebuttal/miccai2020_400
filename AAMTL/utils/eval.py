@@ -106,7 +106,7 @@ def eval_net(net, loader, device, n_val, logger):
             target = target.to(device=device, dtype=torch.long)
             aspect = aspect.to(device=device, dtype=torch.float32)
 
-            mask_pred, outputs = net(imgs)
+            mask_pred, outputs, _ = net(imgs)
             #mask_pred = net(imgs, aspect)
 
             for true_mask, pred in zip(true_masks, mask_pred):
