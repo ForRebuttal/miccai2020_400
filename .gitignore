@@ -1,1 +1,6 @@
 pretrained_model/
+AAMTL/__pycache__/
+AAMTL/network/__pycache__/
+AAMTL/utils/__pycache__/
+AAMTL//run/
+AAMTL/INTERRUPTED.pth
