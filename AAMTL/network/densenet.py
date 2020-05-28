@@ -244,7 +244,7 @@ class ClassBlock(nn.Module):
         self.normalize = nn.LayerNorm(num_features)
         # self.y_transformer = nn.Linear(num_features, n_class)
         self.y_transformer = nn.Sequential(nn.Linear(num_features, num_features), nn.ReLU(), nn.Dropout(0.5),nn.Linear(num_features, n_class))
-        self.classifier_stack = nn.ModuleList(nn.Sequential(OrderedDict([
+        self.classifier_stack = nn.ModuleList([nn.Sequential(OrderedDict([
             nn.Linear(num_features, typeList[typeIndex]), nn.Softmax()]))
             for typeIndex in range(len(typeList))])
         for m in self.modules():
