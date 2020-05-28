@@ -244,8 +244,8 @@ class ClassBlock(nn.Module):
         self.normalize = nn.LayerNorm(num_features)
         # self.y_transformer = nn.Linear(num_features, n_class)
         self.y_transformer = nn.Sequential(nn.Linear(num_features, num_features), nn.ReLU(), nn.Dropout(0.5),nn.Linear(num_features, n_class))
-        self.classifier_stack = nn.ModuleList([
-            nn.Linear(num_features, typeList[typeIndex])
+        self.classifier_stack = nn.ModuleList(nn.Sequential(OrderedDict([
+            nn.Linear(num_features, typeList[typeIndex]), nn.Softmax()]))
             for typeIndex in range(len(typeList))])
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
@@ -396,14 +396,14 @@ class DenseNet(nn.Module):
                 nn.init.constant_(m.bias, 0)
         
          
-    def forward(self, x, aspects):
+    def forward(self, x):
         x0 = self.block_0(x)    #64              *56
         x1 = self.block_1(x0)   #128             *28
         x2 = self.block_2(x1)   #256             *14
         x3 = self.block_3(x2)   #896             *7
         x4 = self.block_4(x3)   #1920            *3
         out_vector = F.adaptive_avg_pool2d(x4, (1, 1)).view(x4.size(0), -1)
-        out, out_list = self.classifier(out_vector, x4, aspects)
+        out, out_list = self.classifier(out_vector, x4)
 
         x = self.up1(x4, x3)    #1920+896 ->896  *7
         x = self.up2(x, x2)     #896+256  ->128  *14
