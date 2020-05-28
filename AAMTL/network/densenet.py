@@ -292,7 +292,7 @@ class ClassBlock(nn.Module):
 
         return encoder_input, tem_out
 
-    def forward(self, x, feature_maps, aspect):
+    def forward(self, x, feature_maps):
         #分来计算28个分类
         count = -1
         out_input = None
