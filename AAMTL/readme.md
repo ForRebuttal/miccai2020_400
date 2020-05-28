@@ -20,5 +20,9 @@ utils
 ## checkpoint_src
 
   //Fold for saving the trained models.
+  
+## demo
+  //Files related to the demo
+  |__demo_img //The nodule image examples for demo
 
 
